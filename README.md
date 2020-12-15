@@ -6,13 +6,13 @@ This example uses [Devise](https://github.com/heartcombo/devise) and [OmniAuth](
 
 ## Osso integration
 
-Osso promises an easy integration to your Rails app. We provide an omniauth provider gem [omniauth-osso](https://github.com/enterprise-oss/omniauth-osso) to make integration a breeze.
+Osso promises an easy integration to your Rails app. We provide an OmniAuth provider gem [omniauth-osso](https://github.com/enterprise-oss/omniauth-osso) to make integration a breeze.
 
 See the Gemfile and [Devise initializer](https://github.com/enterprise-oss/osso-rails-example/blob/main/config/initializers/devise.rb#L12:L16) for how to add and configure the omniauth-osso gem.
 
-If you're not using Devise, we still recommend using omniauth, and your `OmniAuth::Builder` config block will look similar to the Devise initializer.
+If you're not using Devise, we still recommend using OmniAuth, and your `OmniAuth::Builder` config block will look similar to the Devise initializer.
 
-You also need to implement an omniauth callback controller action for Osso. If you're already using OmniAuth for other OAuth providers, this method will look similar to those. See the [OmniAuthCallbacksController#osso](https://github.com/enterprise-oss/osso-rails-example/blob/main/app/controllers/omniauth_callbacks_controller.rb#L3:L7) method.
+You also need to implement an OmniAuth callback controller action for Osso. If you're already using OmniAuth for other OAuth providers, this method will look similar to those. See the [OmniAuthCallbacksController#osso](https://github.com/enterprise-oss/osso-rails-example/blob/main/app/controllers/omniauth_callbacks_controller.rb#L3:L7) method.
 
 That's really all the integration needed. Of course in a real app, you'll need to actually handle the callback, sign the user in, and properly route them.
 
