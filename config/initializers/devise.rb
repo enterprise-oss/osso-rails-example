@@ -11,8 +11,8 @@
 Devise.setup do |config|
   # osso oauth configuration
   config.omniauth :osso, 
-    Rails.application.credentials.osso[:client_id],
-    Rails.application.credentials.osso[:client_secret],
+    ENV.fetch('OSSO_CLIENT_ID'),
+    ENV.fetch('OSSO_CLIENT_SECRET'),
     client_options: { site: 'https://demo.ossoapp.com' }
 
 
