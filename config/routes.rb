@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'application#saml_sign_in'
+  get 'users/saml_sign_in', to: 'application#saml_sign_in'
+  devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }, :skip => [:registrations], :path_names => { :sign_in => "saml_sign_in" }
 end

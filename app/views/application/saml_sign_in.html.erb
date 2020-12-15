@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="main-content hosted-login">
+    <%= form_tag("/users/auth/osso", method: "post", class: 'hosted-login-form') do %>
+      <%= label_tag(:email, "Email") %>
+      <%= email_field_tag(:email) %>
+      <%= submit_tag("Sign in with SSO") %>
+    <% end %>
+  </div>  
+</div>  
