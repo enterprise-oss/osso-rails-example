@@ -44,6 +44,8 @@ This app can be deployed to Heroku - the deployed app will have the `OSSO_CLIENT
 
 You will need to set one ENV variable, `OSSO_REDIRECT_URI`. It should be `https://YOUR_APP_NAME.herokuapp.com/users/auth/osso/callback`. You then must add that same value to the demo instance - choose the Demo Production OAuth client here and add your redirect URI: <https://demo.ossoapp.com/admin/config>. The demo instance reseeds its database every hour, so this is only intended for demo purposes. Trying to use the demo instance as a production system will not work.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/enterprise-oss/osso-rails-example/tree/main)
+
 ### Elsewhere
 
 Totally possible, but you're on your own! Just make sure you set the three ENV variables and you should be good to go.
