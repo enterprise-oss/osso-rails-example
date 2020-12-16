@@ -1,6 +1,6 @@
 # Osso Rails Example
 
-This repository contains a new Rails 6 application with the bare minimum work to demonstrate how to integrate Osso. For more of a real-world example, check out [somehthing](something.com).
+This repository contains a new Rails 6 application with the bare minimum work to demonstrate how to integrate Osso. For more of a real-world example, check out [our fork of forem](https://github.com/enterprise-oss/forem/pull/1), the community software behind [dev.to](https://dev.to).
 
 This example uses [Devise](https://github.com/heartcombo/devise) and [OmniAuth](https://github.com/omniauth/omniauth).
 
