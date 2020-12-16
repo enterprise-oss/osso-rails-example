@@ -6,7 +6,7 @@ ruby '2.6.6'
 gem 'devise'
 gem 'dotenv-rails', groups: [:development, :test]
 
-gem 'omniauth-osso'
+gem 'omniauth-osso', '0.1.8.pre'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'
