@@ -6,12 +6,16 @@ ruby '2.6.6'
 gem 'devise'
 gem 'dotenv-rails', groups: [:development, :test]
 
-gem 'omniauth-osso', '0.1.8.pre'
+gem 'omniauth-osso', '0.1.9'
+gem 'omniauth-rails_csrf_protection'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# gem 'sqlite3', '~> 1.4'
+
+gem 'pg'
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
